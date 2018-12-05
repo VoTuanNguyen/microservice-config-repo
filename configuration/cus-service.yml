@@ -11,7 +11,7 @@ spring:
       ddl-auto: update
     show-sql: true
     
-#security:
-#  oauth2:
-#    resource:
-#      user-info-uri: http://localhost:9000/userinfo
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:9000/userinfo
