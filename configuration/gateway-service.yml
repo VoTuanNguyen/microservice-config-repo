@@ -1,0 +1,17 @@
+# routing   
+zuul:
+  routes:  
+    uaa:
+      path: /uaa/**
+      sensitiveHeaders:
+      serviceId: oauth-service
+    cus:
+      path: /cus/**
+      sensitiveHeaders: 
+      serviceId: customer-service
+    dashboard:
+      path: /dashboard/**
+      sensitiveHeaders: 
+      serviceId: dashboard-service
+    host:
+      socket-timeout-millis: 3000
