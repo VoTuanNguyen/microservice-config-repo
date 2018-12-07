@@ -10,7 +10,7 @@ zuul:
       sensitiveHeaders: 
       serviceId: customer-service
     dashboard:
-      path: /dashboard/**
+      path: /dashboards/**
       sensitiveHeaders: 
       serviceId: dashboard-service
     host:
