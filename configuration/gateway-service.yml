@@ -15,21 +15,3 @@ zuul:
       serviceId: dashboard-service
     host:
       socket-timeout-millis: 3000
-      
-# config security relay token  
-security:
-  oauth2:    
-    client:
-      accessTokenUri: http://localhost:9000/uaa/oauth/token
-      userAuthorizationUri: http://localhost:9000/uaa/oauth/authorize
-      clientId: nguyenvt2
-      clientSecret: nguyenvt2   
-    resource:
-      userInfoUri: http://localhost:9000/uaa/userinfo
-      preferTokenInfo: false  
-  sessions: ALWAYS
-
-proxy:
-  auth:
-    routes:
-      api: oauth2
