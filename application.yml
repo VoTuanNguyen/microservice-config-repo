@@ -1,5 +1,5 @@
 config:
-  variable: LADY AND GENTLEMAN! WELCOME TO MICROSERVICE! C146!
+  variable: LADY AND GENTLEMAN! WELCOME TO MICROSERVICE!
   
 jwt:
   enhance:
