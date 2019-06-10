@@ -1,2 +1,15 @@
 
 haha: NguyenVT2 ahaha
+eureka:
+  instance:
+    instanceId: ${server.port}:${spring.application.name}:${random.int}
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    preferIpAddress: true
+  client:
+    registryFetchIntervalSeconds: 5
+#    registerWithEureka: false       
+#    fetchRegistry: false
+    serviceUrl:
+      defaultZone: ${DISCOVERY_SERVER_URL:http://localhost:7777/eureka}
+
