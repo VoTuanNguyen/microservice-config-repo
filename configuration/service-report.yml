@@ -1,11 +1,6 @@
 
 haha: NguyenVT2 ahaha
 spring:
-  profiles:
-    active: local
----
-spring:
-  profiles: local
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     properties:
